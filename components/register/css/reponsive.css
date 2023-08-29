@@ -1,0 +1,155 @@
+/* tablet and mobile */
+@media (max-width: 1039px) {
+    /* header */
+
+    .header_index0-navbar-logo {
+        margin-left: 40px;
+    }
+    .header_index0-navbar-menu {
+        display: block;
+        font-size: 2rem;
+    }
+      
+    .header_index0-navbar-list {
+        display: none;
+    }
+    /* modal */
+    .modal_search-list {
+        display: none;
+    }
+    .modal_search-logo {
+        display: none;
+    }
+    
+    /* footer */
+    .footer_index09-icons {
+        margin-bottom: 32px;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1039px) {
+    /* header */
+    .header_index0-navbar-menu {
+        font-size: 2rem;
+    }
+    .header_index0-navbar-icon {
+        font-size: 2rem;
+    }
+    .header_index0-navbar-logo {
+        font-size: 2rem;
+    }
+    .header_users-information {
+      right: 164px;
+    }
+    /* content */
+
+    /* footer */
+    .footer-index0-margin {
+        margin-left: 32px;
+    }
+    
+    .footer_index0-input {
+        width: 85%;
+        
+    }
+    /* modal */
+    .modal_search-suggest {
+        left: 14%;
+     }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    /* header */
+    .cart-more {
+        width: 300px;
+        margin-right: 16px;
+    }
+
+    .header_users-information {
+        right: 42px;
+    }
+     
+    /* content */
+    .register_app-facebook {
+        padding: 8px 40px ;
+    }
+    .register_app-google {
+        padding: 8px 48px;
+    }
+
+    .content2_product-imgs {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .content2_product-information {
+        margin-left: 42px;
+      }
+    
+      .content2_product-other {
+         font-size: 1.6rem;    
+      }
+    
+      .content2_product-heart {
+         font-size: 1.6rem;
+         float: right;
+         margin-right: 42px;
+      }
+    
+      .content2_product-name {
+         font-size: 1.6rem;
+      }
+    
+      .content2_product-price {
+         font-size: 1.6rem;
+      }
+
+    /* footer */
+    .footer_index0-text {
+        margin-left: 12px;
+    }
+    .footer_index0-inputs {
+        height: 40px;
+        width: 80%;
+    }
+
+    .footer_index0-input {
+        width: 79%;
+    }
+    
+    .footer_index0-btn{
+        padding: 4px 8px;
+        font-size: 1.4rem;
+        line-height: 28px;
+    }
+
+    .footer_index0-messenger {
+        margin-left: 0;
+    }
+
+    .footer_index0-icons {
+        padding-bottom: 32px;
+        margin-top: 32px;
+    }
+
+
+    .footer_index0-icon {
+        font-size: 2rem;
+    }
+
+    .btn_index0-scroll {
+       margin-bottom: 50px;
+    }
+
+    .modal4_body-cover {
+        width: 400px;
+        margin-top: 70px;
+    }
+
+    .modal_search-suggest {
+        width: 320px;
+        left: 14%;
+    }
+}

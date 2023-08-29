@@ -1,0 +1,28 @@
+{
+  "data": [
+   {
+      "id": 0,
+      "nameCode": "NHẬP MÃ: EGA10",
+      "promoCode": "Mã khuyến mãi: EGA10",
+      "description": "Điều kiện: <br>- Mã giảm 10% cho đơn hàng có giá trị tối thiểu 1.5 triệu <br>- Giảm tối đa 500k"
+   },
+   {
+      "id": 1,
+      "nameCode":" NHẬP MÃ: EGA15",
+      "promoCode": "Mã khuyến mãi: EGA15",
+      "description": "Điều kiện: <br>- Mã giảm 15% cho đơn hàng có giá trị tối thiểu 2 triệu <br>- Giảm tối đa 500k"
+   },
+   {
+      "id": 2,
+      "nameCode": "NHẬP MÃ: EGA99",
+      "promoCode": "Mã khuyến mãi: EGA99",
+      "description": "Điều kiện: <br>- Giảm giá 99k các sản phẩm Áo thun <br>- Tổng giá trị sản phẩm từ 1 triệu trở lên"
+   },
+   {
+      "id": 3,
+      "nameCode": "NHẬP MÃ: FREESHIP",
+      "promoCode": "Mã khuyến mãi: FREESHIP",
+      "description": "Điều kiện: <br>- Miễn phí ship 100K cho đơn hàng tối thiểu từ 500.000đ <br>- Áp dụng cho tất cả tỉnh / thành phố"
+   }
+  ]
+}

@@ -1,0 +1,243 @@
+/* tablet & mobile */
+@media (max-width: 1023px) { 
+    /* header */
+    .header_index6-navbar-list {
+      display: none;
+    }
+  
+    .header_index6-navbar-menu {
+      display: block;
+    }
+  
+    /* modal */
+    .modal_search-logo  {
+      display: none;
+    }
+    .modal_search-list {
+      display: none;
+    } 
+  
+    .content_body-product-none {
+      display: none;
+    }
+    /* modal */
+    .modal_search-logo  {
+      display: none;
+    }
+    .modal_search-list {
+      display: none;
+    } 
+    .modal4_body-cover {
+      margin-top: 180px;
+    }
+  
+  }
+  
+  /* tablet */
+  @media (min-width: 740px) and (max-width: 1023px) {
+      .hidden-tablet {
+          display: none;
+      }
+      .header_navbar-menu {
+          font-size: 2rem;
+      }
+      .header_navbar-icon {
+          font-size: 2rem;
+      }
+      .header_navbar-logo {
+          font-size: 2rem;
+      }
+      .header_navbar-form {
+         margin-top: 42px;
+      } 
+      .header_navbar-form::after {
+         position: absolute;
+         right: 27px;
+      }
+      .header_users-information {
+        right: 166px;
+      }
+      /*slider  */
+      .slider_content {
+        overflow: hidden;
+        height: 312px;
+        position: relative;
+      }
+      .slider_icon-prev {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        font-size: 3rem;
+        z-index: 1;
+      }
+      .slider_icon-next {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        font-size: 3rem;
+        z-index: 1;
+      }
+      /* content */
+      .content2_product-heart {
+        float: right;
+      }
+
+      /* footer */
+      .footer_index6--text {
+        margin-top: 12px;
+        text-align: center;
+      }
+      .footer_index6_inputs {
+        width: 95%;
+      }
+      .footer_index6_input {
+        width: 84%;
+      }
+  
+      .footer_index6_icons {
+        margin-bottom: 32px;
+        margin-top: 14px;
+      }
+
+      /* modal */
+      .modal_search-suggest {
+         left: 14%;
+      }
+  
+  }
+  
+  /* mobile */
+  @media (max-width: 739px)  {
+     /* header */
+     .cart-more {
+      width: 300px;
+      margin-right: 12px;
+    }
+    .header_users-information {
+      right: 42px;
+     }
+    /* content */
+      .content_index6-sub-photo {
+        display: none;
+      }
+      .content_index6-main-photo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+      }
+
+      .active--margin {
+          margin-top: 30px;
+      }
+
+      .content_index6-header {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .content_index6-body {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .content_index6-Evaluate-heading {
+        margin-left: 12px;
+      }
+
+      .content_index6-user {
+        margin-left: 12px;
+      }
+
+      .btn-all-comment {
+        display: block;
+      }
+
+      .content_index6-Evaluate-list {
+        display: none;
+      }
+      .content2_product-imgs {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .content2_product-information {
+        margin-left: 42px;
+      }
+    
+      .content2_product-other {
+         font-size: 1.6rem;    
+      }
+    
+      .content2_product-heart {
+         font-size: 1.6rem;
+         float: right;
+         margin-right: 42px;
+      }
+    
+      .content2_product-name {
+         font-size: 1.6rem;
+      }
+    
+      .content2_product-price {
+         font-size: 1.6rem;
+      }
+      
+      /* footer */
+      .footer_index6-text {
+        margin-left: 12px;
+      }
+      .footer_index6-inputs {
+        height: 40px;
+        width: 80%;
+      }
+  
+      .footer_index6-input {
+        width: 79%;
+      }
+      
+      .footer_index6-btn {
+         padding: 4px 8px;
+         font-size: 1.4rem;
+         line-height: 28px;
+      }
+  
+      .footer_index6-messenger {
+        margin-left: 0;
+      }
+  
+      .footer_index6-icons {
+         padding-bottom: 32px;
+         margin-top: 32px;
+      }
+  
+  
+      .footer_index6-icon {
+        font-size: 2rem;
+      }
+  
+      .btn_index6-scroll {
+        margin-bottom: 50px;
+      }
+  
+      .modal_search-suggest {
+        width: 320px;
+        left: 14%;
+      }
+
+      .modal4_body-cover {
+        width: 400px;
+        margin-top: 70px;
+      }
+      
+      .modal_search-suggest {
+        width: 320px;
+        left: 14%;
+      }
+    
+  }
+  
+  
+  
