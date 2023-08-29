@@ -260,6 +260,7 @@ header {
     background-color: var(--white-color);
     width: 500px;
     right: -32px;
+    top: 60px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
     border-radius: 3px;
     display: none;

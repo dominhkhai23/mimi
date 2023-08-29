@@ -262,6 +262,7 @@ header {
 .cart-more {
       position: absolute;
       background-color: var(--white-color);
+      top: 60px;
       width: 500px;
       right: -32px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
