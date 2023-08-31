@@ -14,6 +14,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: translate(-50%);
   font-size: 40px;
   color: yellowgreen;
   animation: rotate 1s infinite linear;
@@ -21,6 +22,7 @@
 
 .wrapper {
   position: relative;
+  margin-top: 23px;
 }
 
 header {
@@ -434,6 +436,10 @@ header {
 }
 
 /* content */
+.container {
+  width: 100%;
+  padding-right: 0;
+}
 
 .content {
   position: relative;
@@ -871,6 +877,7 @@ header {
 .footer {
   margin-top: 50px;
   background-color: #81AACC;
+  width: 100%;
 }
 
 .footer_logo {

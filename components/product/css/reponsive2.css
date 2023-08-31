@@ -6,6 +6,22 @@
     }  
     .header_index2-navbar-menu {
         display: block;
+        margin-top: 4px;
+    }
+    .header_index2-navbar-logo {
+      padding-left: 32px;
+      margin-top: 6px;
+    }
+  
+    .header_index2-navbar-search {
+      padding-right: 12px;
+    }
+  
+    .header_index2-navbar-user {
+      padding-right: 12px;
+    }
+    .header_index2-navbar-form {
+       right: -30px;
     }
 
     /* content */
@@ -62,8 +78,7 @@
       }
       /* footer */
       .footer_index2-text {
-        margin-top: 12px;
-        margin-left: 22px;
+       
       }
       .footer_index2-inputs {
         width: 80%;
@@ -99,6 +114,10 @@
 .cart-more {
   width: 300px;
   margin-right: 12px;
+}
+
+.cart-more::after {
+  right: 14px;
 }
 .header_users-information {
   right: 42px;
@@ -165,21 +184,22 @@
 
   /* footer */
   .footer_index2-text {
-    margin-left: 12px;
+    padding: 22px;
   }
+
   .footer_index2-inputs {
-    height: 32px;
+    height: 52px;
     width: 80%;
   }
 
   .footer_index2-input {
-    width: 79%;
+    width: 74%;
   }
   
   .footer_index2-btn {
-      padding: 4px 8px;
+      padding: 4px 12px;
       font-size: 1.4rem;
-      line-height: 22px;
+      line-height: 42px;
   }
 
   .footer_index2-messenger {

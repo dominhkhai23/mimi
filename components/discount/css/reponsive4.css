@@ -8,6 +8,22 @@
     .header_index4-navbar-menu {
       display: block;
     }
+
+    .header_index4-navbar-logo {
+      padding-left: 32px;
+      margin-top: 12px;
+    }
+  
+    .header_index4-navbar-search {
+      padding-right: 12px;
+    }
+  
+    .header_index4-navbar-user {
+      padding-right: 12px;
+    }
+    .header_index4-navbar-form {
+       right: -30px;
+    }
   
     /* modal */
     .modal_search-logo  {
@@ -37,15 +53,19 @@
       .header_index4-navbar-logo {
           font-size: 2rem;
       }
-      .header_navbar-form {
-         margin-top: 42px;
+      .header_index4-navbar-form {
+         margin-top: 38px;
       } 
-      .header_navbar-form::after {
+
+      .header_index4-navbar-form::after {
          position: absolute;
-         right: 27px;
       }
       .header_users-information {
         right: 170px;
+      }
+
+      .cart-more::after {
+        right: 27px;
       }
       
       /* content */
@@ -68,7 +88,7 @@
       }
       /* footer */
       .footer_index4--text {
-        margin-top: 12px;
+        padding-top: 12px;
         text-align: center;
       }
       .footer_index4_inputs {
@@ -92,9 +112,14 @@
       width: 300px;
       margin-right: 12px;
     }
+
+    .cart-more::after {
+      right: 14px;
+    }
     .header_users-information {
       right: 42px;
     }
+    
 
     /* content */
 
@@ -155,48 +180,48 @@
       /* footer */
       
 
-      .footer_index4-text {
-        margin-left: 12px;
-      }
-      .footer_index4-inputs {
-        height: 40px;
-        width: 80%;
-      }
-  
-      .footer_index4-input {
-        width: 79%;
-      }
-      
-      .footer_index4-btn {
-         padding: 4px 8px;
-         font-size: 1.4rem;
-         line-height: 28px;
-      }
-  
-      .footer_index4-messenger {
-        margin-left: 0;
-      }
-  
-      .footer_index4-icons {
-         padding-bottom: 32px;
-         margin-top: 32px;
-      }
-  
-  
-      .footer_index4-icon {
-        font-size: 2rem;
-      }
-  
-      .btn_index4-scroll {
-        margin-bottom: 50px;
-      }
-  
-      .modal_search-suggest {
-        width: 320px;
-        left: 14%;
-      }
-    
+  .footer_index4-text {
+    padding-left: 22px;
   }
+  .footer_index4-inputs {
+    height: 52px;
+    width: 80%;
+  }
+
+  .footer_index4-input {
+    width: 75%;
+  }
+  
+  .footer_index4-btn {
+      padding: 4px 12px;
+      font-size: 1.4rem;
+      line-height: 42px;
+  }
+
+  .footer_index4-messenger {
+    margin-left: 0;
+  }
+
+  .footer_index4-icons {
+      padding-bottom: 32px;
+      margin-top: 32px;
+  }
+
+
+  .footer_index4-icon {
+    font-size: 2rem;
+  }
+
+  .btn_index4-scroll {
+    margin-bottom: 50px;
+  }
+
+  .modal_search-suggest {
+    width: 320px;
+    left: 14%;
+  }
+
+}
   
   
   

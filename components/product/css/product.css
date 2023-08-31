@@ -12,11 +12,12 @@
 
 .loader-icon {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 45%;
+  top: 45%;
   font-size: 40px;
   color: yellowgreen;
   animation: Around 1s infinite linear;
+ 
 }
 
 .wrapper_index2 {

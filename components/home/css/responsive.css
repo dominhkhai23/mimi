@@ -7,6 +7,22 @@
 
   .header_navbar-menu {
     display: block;
+    padding-top: 4px;
+  }
+
+  .header_navbar-logo {
+    padding-left: 32px;
+  }
+
+  .header_navbar-search {
+    padding-right: 12px;
+  }
+
+  .header_navbar-user {
+    padding-right: 12px;
+  }
+  .header_navbar-form {
+     right: -30px;
   }
 
   /* modal */
@@ -49,6 +65,15 @@
       right: 170px;
     }
     
+    .cart-more {
+      top: 64px;
+      right: -30px;
+    }
+
+    .header_navbar-form {
+      right: -24px;
+      top: 22px;
+    }
 
     /* slider */
     .slider_content {
@@ -101,7 +126,14 @@
 
 /* mobile */
 @media (max-width: 739px)  {
-  /* header */
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  
   .header_users-information {
     right: 42px;
   }
@@ -110,7 +142,14 @@
     margin-right: 12px;
   }
 
+  .cart-more::after {
+    right: 14px;
+  }
+
   /* content */
+  .container {
+    margin: 0;
+  }
   .content_header-product-heading {
     font-size: 2rem;
   }
@@ -235,22 +274,27 @@
 
 
   /* footer */
+
+  .footer_list {
+    width: 200px;
+  }
+
   .footer-text {
-    margin-left: 12px;
+    padding-left: 12px;
   }
   .footer_inputs {
-    height: 32px;
+    height: 52px;
     width: 80%;
   }
 
   .footer_input {
-    width: 79%;
+    width: 75%;
   }
   
   .footer_btn {
-      padding: 4px 8px;
+      padding: 4px 12px;
       font-size: 1.4rem;
-      line-height: 22px;
+      line-height: 40px;
   }
 
   .footer_messenger {

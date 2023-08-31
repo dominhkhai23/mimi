@@ -8,6 +8,22 @@
     .header_index6-navbar-menu {
       display: block;
     }
+
+    .header_index6-navbar-logo {
+      padding-left: 32px;
+      margin-top: 12px;
+    }
+  
+    .header_index6-navbar-search {
+      padding-right: 12px;
+    }
+  
+    .header_index6-navbar-user {
+      padding-right: 12px;
+    }
+    .header_index6-navbar-form {
+       right: -30px;
+    }
   
     /* modal */
     .modal_search-logo  {
@@ -82,6 +98,10 @@
         float: right;
       }
 
+      .cart-more {
+        top: 62px;
+      }
+
       /* footer */
       .footer_index6--text {
         margin-top: 12px;
@@ -112,10 +132,14 @@
      .cart-more {
       width: 300px;
       margin-right: 12px;
+      top: 62px;
     }
     .header_users-information {
       right: 42px;
-     }
+    }
+    .cart-more::after {
+      right: 14px;
+    }
     /* content */
       .content_index6-sub-photo {
         display: none;
@@ -187,21 +211,22 @@
       
       /* footer */
       .footer_index6-text {
-        margin-left: 12px;
+        padding-left: 22px;
       }
+      
       .footer_index6-inputs {
-        height: 40px;
+        height: 52px;
         width: 80%;
       }
   
       .footer_index6-input {
-        width: 79%;
+        width: 75%;
       }
       
       .footer_index6-btn {
-         padding: 4px 8px;
+         padding: 4px 12px;
          font-size: 1.4rem;
-         line-height: 28px;
+         line-height: 42px;
       }
   
       .footer_index6-messenger {

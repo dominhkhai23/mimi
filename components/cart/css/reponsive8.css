@@ -1,27 +1,50 @@
 /* tablet & mobile */
 @media (max-width: 1023px) { 
     /* header */
-    .header_index-navbar-list {
-      display: none;
-    }
-  
-    .header_index-navbar-menu {
-      display: block;
-    }
-    
-    /* modal */
-    .modal_search-logo  {
-      display: none;
-    }
-    .modal_search-list {
-      display: none;
-    } 
-    .modal4_body-cover {
-      margin-top: 180px;
-    }
-    
-  
+  .header_index-navbar-list {
+    display: none;
   }
+
+  .header_index-navbar-menu {
+    display: block;
+  }
+
+  .header_index-navbar-list {
+    display: none;
+}  
+.header_index-navbar-menu {
+    display: block;
+    margin-top: 4px;
+}
+.header_index-navbar-logo {
+  padding-left: 32px;
+  margin-top: 14px;
+}
+
+.header_index-navbar-search {
+  padding-right: 12px;
+}
+
+.header_index-navbar-user {
+  padding-right: 12px;
+}
+.header_index-navbar-form {
+    right: -30px;
+}
+    
+/* modal */
+.modal_search-logo  {
+  display: none;
+}
+.modal_search-list {
+  display: none;
+} 
+.modal4_body-cover {
+  margin-top: 180px;
+}
+
+
+}
   
   /* tablet */
   @media (min-width: 740px) and (max-width: 1023px) {
@@ -36,6 +59,11 @@
       }
       .header_index-navbar-logo {
           font-size: 2rem;
+      }
+
+      .header_index-navbar-form {
+        margin-top: 36px;
+        margin-right: 2px;
       }
       /* content */
       
@@ -96,8 +124,12 @@
 @media (max-width: 739px)  {
    /* header */
 .cart-more {
-       width: 300px;
-       margin-right: 12px;
+  width: 300px;
+  margin-right: 12px;
+}
+
+.cart-more::after {
+  right: 14px;
 }
     
   /* content */
@@ -184,21 +216,21 @@
 
 /* footer */
 .footer_index-text {
-  margin-left: 12px;
+  padding-left: 22px;
 }
 .footer_index-inputs {
-  height: 40px;
+  height: 52px;
   width: 80%;
 }
 
 .footer_index-input {
-  width: 79%;
+  width: 75%;
 }
 
 .footer_index-btn {
-    padding: 4px 8px;
+    padding: 4px 12px;
     font-size: 1.4rem;
-    line-height: 28px;
+    line-height: 42px;
 }
 
 .footer_index-messenger {
@@ -221,7 +253,11 @@
 
 .modal4_body-cover {
   width: 400px;
-  margin-top: 70px;
+  margin-top: 84px;
+}
+
+.modal4_body-detail {
+ height: 140px;
 }
 
 .modal_search-suggest {

@@ -8,6 +8,22 @@
     .header_index7-navbar-menu {
       display: block;
     }
+
+    .header_index7-navbar-logo {
+      padding-left: 32px;
+      margin-top: 12px;
+    }
+  
+    .header_index7-navbar-search {
+      padding-right: 12px;
+    }
+  
+    .header_index7-navbar-user {
+      padding-right: 12px;
+    }
+    .header_index7-navbar-form {
+       right: -30px;
+    }
   
     /* modal */
     .modal_search-logo  {
@@ -92,6 +108,9 @@
       width: 300px;
       margin-right: 12px;
     }
+    .cart-more::after {
+      right: 14px;
+    }
     /* content */
     .content_index7-map {
       width: 50%;
@@ -132,21 +151,21 @@
     }
       /* footer */
       .footer_index7-text {
-        margin-left: 12px;
+        padding-left: 22px;
       }
       .footer_index7-inputs {
-        height: 40px;
+        height: 52px;
         width: 80%;
       }
   
       .footer_index7-input {
-        width: 79%;
+        width: 75%;
       }
       
       .footer_index7-btn {
-         padding: 4px 8px;
+         padding: 4px 12px;
          font-size: 1.4rem;
-         line-height: 28px;
+         line-height: 42px;
       }
   
       .footer_index7-messenger {
