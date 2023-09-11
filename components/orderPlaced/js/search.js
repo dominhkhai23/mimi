@@ -1,15 +1,18 @@
-var searchBtn = document.querySelector('.header-navbar-search')
+const searchBtn = document.querySelector('.header-navbar-search')
 var modal = document.querySelector('.modal')
 var modalSearch = document.querySelector('.modal_search-icon')
 var modalOverlay = document.querySelector('.modal_overlay')
-searchBtn.onclick = function() {
-  modal.classList.add('open')
+searchBtn.onclick = function(event) {
+  modal.style.display = 'block'
+  
 }
 
 modalSearch.onclick = function() {
-    modal.classList.remove('open')
+  modal.style.display = 'none'
+  
 }
 
 modalOverlay.onclick = function() {
-    modal.classList.remove('open')
+  modal.style.display = 'none'
+  
 }
