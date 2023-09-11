@@ -51,8 +51,11 @@
     .header-navbar-logo {
         font-size: 2rem;
     }
+    .header_users {
+        margin-right: 20px;
+    }
     .header_users-information {
-      right: 170px;
+      right: 180px;
     }
     .cart-more {
         margin-top: 4px;
@@ -90,7 +93,7 @@
     }
 
     .header_users-information {
-        right: 42px;
+        right: 38px;
     }
      
     /* content */
