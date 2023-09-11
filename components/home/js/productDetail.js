@@ -123,7 +123,7 @@ var dataImg = [
          color:[
             'kẻ đen',
             'kẻ xanh',
-        ]
+         ]
     },
     
     { 

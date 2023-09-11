@@ -120,12 +120,131 @@ html {
 .modal_search-list  {
   width: 140px;
   display: flex;
+  align-items: center;
 }
+
 .modal_search-icon  {
     padding-left: 22px;
     font-size: 1.6rem;
     cursor: pointer;
+    position: relative;
 }
+
+.modal_search-cart:hover .modal_cart-more {
+  display: block;
+  top: 34px;
+  right: -33px;
+}
+
+.modal_cart-more {
+    position: absolute;
+    background-color: var(--white-color);
+    width: 500px;
+    right: -32px;
+    top: 60px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    display: none;
+} 
+
+.modal_cart-more::before {
+    position: absolute;
+    content: "";
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent;
+    right: 26px;
+    top: -30px;
+}
+
+.modal_cart-more::after {
+    position: absolute;
+    content: "";
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #ccccccb5 transparent;
+    right: 26px;
+    top: -30px;
+}
+
+.modal_cart-more-heading {
+  font-weight: 300;
+  margin-left: 12px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.modal_cart-more-body {
+  margin-bottom: 12px;
+  height: 300px;
+  overflow: auto;
+}
+
+.modal_cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.modal_cart-more-text {
+  text-align: center;
+  margin-left: 12px;
+}
+
+.modal_cart-more-photo {
+    width: 54px;
+    margin-top: 22px;
+    margin-left: 12px;
+} 
+    
+.modal_cart-more-img {
+    width: 100%;
+    border: 1px solid #ccc;
+} 
+
+.modal_cart-more-information {
+   margin-left: 12px;
+   line-height: 1.7;
+}
+
+.modal_cart-more-name {
+  font-size: 1.4rem !important;
+  
+} 
+
+.modal_cart-more-price {
+   font-size: 1.4rem !important;
+} 
+ 
+
+
+.btn-cart {
+  padding: 8px;
+  border: none;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-radius: 3px;
+  margin-left: 12px;
+  cursor: pointer;
+  margin-left: 195px;
+  margin-bottom: 8px;
+}
+
+.btn-cart:hover {
+  background-color: rgba(0, 0, 0, 0.735);
+}
+
+.modal_cart-item-count {
+  position: absolute;
+  background-color: #c23564;
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  padding: 1px 5px;
+  border-radius: 45%;
+  top: -14px;
+  right: -12px;
+  display: none;
+}
+
 
 .modal_search-hover {
     position: relative;
@@ -139,7 +258,8 @@ html {
 .modal_search-form {
   position: absolute;
   background-color: var(--white-color);
-  top: 0;
+  top: 4px;
+  right: -42px;
   margin-top: 32px;
   width: 100px;
   background-color: #000000be;
@@ -164,6 +284,11 @@ html {
      padding: 8px;
      font-size: 1.4rem;
 }
+
+.modal_search-item-link {
+  text-decoration: none;
+  color: var(--white-color);
+}
 .modal_search-suggest { 
     background-color: var(--white-color);
     position: absolute;
@@ -187,6 +312,100 @@ html {
     background-color: #000000b4;
     color: var(--white-color);
 }
+
+.modal_users {
+    margin-right: 8px;
+    margin-left: 26px;
+    margin-top: 2px;
+    display: none;
+}
+  
+  
+.modal_users-img {
+    width: 24px;
+    border-radius: 50%;
+    position: relative;
+}
+  
+.modal_users-information {
+    position: absolute;
+    background-color: var(--white-color);
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    right: 232px;
+    top: 90px;
+    display: none;
+}
+  
+.modal_users-img:hover + .modal_users-information,
+.modal_users-information:hover{
+    display: block;
+}
+  
+.modal_users-information::after {
+    position: absolute;
+    content: '';
+    border-color: transparent transparent #ccccccc4 transparent ;
+    border-width: 16px;
+    border-style: solid;
+    top: -34px;
+    right: 20px
+}
+  
+.modal_users-information::before {
+    position: absolute;
+    content: '';
+    border-color: transparent;
+    border-width: 20px;
+    border-style: solid;
+    top: -20px;
+    right: 20px
+}
+  
+.modal_users-header {
+    display: flex;
+    padding-left: 12px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+}
+  
+.modal_users-img2 {
+    width: 24px;
+    border-radius: 50%;
+    margin-top: 18px;
+}
+  
+.modal_users-name {
+   margin-left: 12px;
+   margin-top: 12px;
+   font-size: 1.6rem;
+}
+  
+.modal_users-list {
+  
+}
+  
+.modal_users-item {
+    list-style: none;
+    padding-left: 12px;
+    height: 42px;
+    line-height: 42px;
+    margin-top: 12px;
+    font-size: 1.6rem;
+}
+  
+.modal_users-item-link {
+    text-decoration: none;
+    color: var(--black-color);
+}
+  
+.modal_users-item:hover {
+    background-color: black;
+    color: var(--white-color);
+}
+  
 
   
 
@@ -495,25 +714,13 @@ html {
 }
 
 @keyframes Around {
-    from {
-        transform: rotate(0deg);
+    0% {
+      transform: rotate(0deg);
     }
-
-    to {
-        transform: rotate(360deg);
+    100% {
+      transform: rotate(360deg);
     }
-}
-
-@keyframes spread {
-    from {
-      transform: translateX(6%) translateY(6%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0) translateY(0);
-      opacity: 1;
-    }
-}
+  }
 
 @keyframes slide-down {
     0% {
@@ -525,3 +732,12 @@ html {
       opacity: 1;
     }
 }
+
+@keyframes slideAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } 

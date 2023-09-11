@@ -137,8 +137,12 @@ var dataImg = [
             ]
         },
         {
-            img1: 'https://theme.hstatic.net/200000696635/1001034053/14/frame_2.png?v=393',
-            img2: 'https://product.hstatic.net/200000696635/product/frame_64_2e43ad9070f041aa8d80f8b47ed34876.png',
+            img: [
+                'https://product.hstatic.net/200000696635/product/frame_64_2e43ad9070f041aa8d80f8b47ed34876.png',
+                'https://product.hstatic.net/200000696635/product/frame_66_dbd03608eaae4f6d8403b2aec61e8234.png',
+                'https://product.hstatic.net/200000696635/product/frame_65_628ab6e8f0f443268a626890a8af9a30.png',
+            ],
+            img1: 'https://product.hstatic.net/200000696635/product/frame_64_2e43ad9070f041aa8d80f8b47ed34876.png',
             name: 'Áo sơ mi kẻ sọc - White',
             price: 699000 ,
             color: 'white',

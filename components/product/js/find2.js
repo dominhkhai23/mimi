@@ -1,4 +1,4 @@
-var input = document.querySelector('.modal_search-input')
+const input = document.querySelector('.modal_search-input')
 var row = document.querySelector('.row')
 var col = document.querySelectorAll('.col.l-2-4.content2_active')
 var modalSearch = document.querySelector('.modal')
@@ -11,14 +11,12 @@ var headerIndex2Navbar = document.querySelector('.header_index2-navbar-icon')
 
 
 
-
 input.addEventListener('keyup', (event) => {
    const valueInput = event.target.value.trim().toLowerCase()
    switch(event.keyCode) {
       case 13: 
         Product(valueInput)
         modalSearch.classList.add('close')
-        input.value = ''
         modalSuggest.classList.remove('open4')
         content2.style.display = 'block'
         contentIndex2.classList.add('close3')
@@ -33,7 +31,6 @@ modalSearchBtn.addEventListener('click', () => {
    if(searchValue) {
       Product(searchValue)
       modalSearch.classList.add('close')
-      input.value = ''
       modalSuggest.classList.remove('open4')
       content2.style.display = 'block'
       contentIndex2.style.display = 'none'

@@ -65,6 +65,10 @@
         margin-top: 36px;
         margin-right: 2px;
       }
+
+      .header_users-information {
+        right: 168px;
+     }
       /* content */
       
       .content_category-item {
@@ -117,6 +121,10 @@
         margin-bottom: 32px;
         margin-top: 14px;
       }
+
+      .modal_search-suggest {
+        left: 12%;
+      }
   
   }
   
@@ -130,6 +138,10 @@
 
 .cart-more::after {
   right: 14px;
+}
+
+.header_users-information {
+   right: 40px;
 }
     
   /* content */
@@ -263,6 +275,10 @@
 .modal_search-suggest {
   width: 320px;
   left: 14%;
+}
+
+.modal_search-product {
+  width: 90%;
 }
 
 }

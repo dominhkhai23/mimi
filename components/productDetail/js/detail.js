@@ -7,11 +7,13 @@ const priceProduct = document.querySelector('.content_index6-price')
 const colorList = document.querySelector('.content_index6-color-list')
 const nextLeft = document.querySelector('.content_index6-main-icon-left')
 const nextRight = document.querySelector('.content_index6-main-icon-right')
+const indexing = document.querySelector('.content_index6-indexing-name.content_index6-indexing-name-color')
 var color;
 var index = 0; 
 var imgs;
 var dataImg;
 data.map((detail) => {
+  indexing.innerText = detail.name
   dataImg = detail.img
   sliderImg1.src = detail.img1
   sliderSub.innerHTML = ''

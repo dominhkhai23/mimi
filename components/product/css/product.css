@@ -12,8 +12,8 @@
 
 .loader-icon {
   position: absolute;
-  left: 45%;
-  top: 45%;
+  left: 50%;
+  top: 50%;
   font-size: 40px;
   color: yellowgreen;
   animation: Around 1s infinite linear;
@@ -54,7 +54,7 @@ header {
   
 
 .header_index2-navbar-logo {
-     margin-top: 8px;
+     margin-top: 14px;
 }
   
 .header_index2-navbar-img {
@@ -112,8 +112,8 @@ header {
 }
 
 .header_index2-navbar-user {
-    margin-left: 12px;
-      position: relative;
+    margin-left: 22px;
+    position: relative;
 }
   
 .header_index2-navbar-user:hover .header_index2-navbar-form {
@@ -165,7 +165,7 @@ header {
 .header_users {
   margin-top: 6px;
   margin-right: 8px;
-  margin-left: 18px;
+  margin-left: 26px;
   display: none;
 }
 
@@ -183,8 +183,8 @@ header {
   height: 200px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   border-radius: 3px;
-  right: 206px;
-  top: 60px;
+  right: 128px;
+  top: 70px;
   display: none;
 }
 
@@ -251,7 +251,7 @@ header {
 }
 
 .header_index2-navbar-cart {
-      margin-left: 12px;
+      margin-left: 22px;
       position: relative;
 }
 .header_index2-navbar-cart:hover .cart-more {
@@ -263,7 +263,7 @@ header {
     background-color: var(--white-color);
     width: 500px;
     top: 60px;
-    right: -32px;
+    right: -34px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
     border-radius: 3px;
     display: none;
@@ -272,7 +272,7 @@ header {
 .cart-more::before {
     position: absolute;
     content: "";
-    border-width: 50px;
+    border-width: 20px;
     border-style: solid;
     border-color: transparent;
     right: 26px;
@@ -481,13 +481,13 @@ header {
    line-height: 30px;
 }
 .content2_indexing-item {
-  font-size: 1.6rem;
-  margin-left: 8px;
-  color: #155BF6;
+   font-size: 1.6rem;
+   margin-left: 8px;
+   color: #155BF6;
 }
-
-.content2_indexing--color {
-  color: #ccc;
+ 
+.content2_indexing-item--color {
+   color: #ccc;
 }
  
 .content2_product {
@@ -497,6 +497,10 @@ header {
 .content2_product-imgs {
    position: relative;
    transition: transform 0.5s linear;
+}
+
+.content2_product-imgs:hover .content2_product-eye {
+  display: block;
 }
 .content2_product-imgs:hover {
    transform: scale(0.9);
@@ -515,19 +519,41 @@ header {
    z-index: -1;
    object-fit: cover;
 }
+
+.content2_product-eye-link {
+  color: var(--black-color);
+}
+
+.content2_product-eye {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--white-color);
+  font-size: 1.6rem;
+  padding: 10px 16px;
+  border-radius: 3px;
+  display: none;
+}
+
+.content2_product-eye:hover {
+  background-color: #c23564;
+  color: var(--white-color);
+}
  
 .content2_product-information {
     margin-top: 12px;
 }
-
 .content2_product-other {
-  font-size: 1.4rem;
-  user-select: none;
+   font-size: 1.4rem;
+   user-select: none;
 }
  
  .content2_product-heart {
    font-size: 1.4rem;
    margin-left: 160px;
+   cursor: pointer;
  }
  
 .content2_product-name {
@@ -541,7 +567,7 @@ header {
 }
 
 .content2_active {
-   margin-top: 22px;
+  margin-top: 22px;
 }
 
 /*  */

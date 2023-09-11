@@ -4,10 +4,12 @@
 
     .header-navbar-logo {
         margin-left: 40px;
+        margin-top: 14px;
     }
     .header-navbar-menu {
         display: block;
         font-size: 2rem;
+        margin-top: 4px;
     }
       
     .header-navbar-list {
@@ -39,7 +41,10 @@
         font-size: 2rem;
     }
     .header_users-information {
-      right: 164px;
+      right: 170px;
+    }
+    .cart-more {
+        margin-top: 4px;
     }
     /* content */
      .content_message-chat {
@@ -56,7 +61,7 @@
     }
     /* modal */
     .modal_search-suggest {
-        left: 14%;
+        left: 12%;
      }
 }
 
@@ -66,6 +71,11 @@
     .cart-more {
         width: 300px;
         margin-right: 16px;
+        margin-top: 4px;
+    }
+
+    .cart-more::after {
+        right: 10px;
     }
 
     .header_users-information {
@@ -130,9 +140,13 @@
         right: 4px;
     }
 
+    .content_message-chat {
+        top: 240px;
+    }
+
     /* footer */
     .footer-text {
-        margin-left: 12px;
+        padding-left: 12px;
     }
     .footer-inputs {
         height: 40px;
@@ -175,5 +189,9 @@
     .modal_search-suggest {
         width: 320px;
         left: 14%;
+    }
+
+    .modal_search-product {
+        width: 90%;
     }
 }

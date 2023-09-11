@@ -20,7 +20,6 @@ input.addEventListener('keyup', (event) => {
       case 13: 
         Product(valueInput)
         modalSearch.classList.add('close')
-        input.value = ''
         modalSuggest.classList.remove('open4')
         content2.style.display = 'block'
         slider.style.display = 'none'
@@ -37,13 +36,11 @@ modalSearchBtn.addEventListener('click', () => {
    if(searchValue) {
       Product(searchValue)
       modalSearch.classList.add('close')
-      input.value = ''
       modalSuggest.classList.remove('open4')
       content2.style.display = 'block'
       slider.style.display = 'none'
       sliderFooter.style.display = 'none'
       content.classList.add('close3')
-      content3.style.display = 'none'
       
    } else {
       modalSearch.classList.remove('close')
@@ -53,10 +50,11 @@ modalSearchBtn.addEventListener('click', () => {
 
 function Product(value) {
    col.forEach(product => {
-      if(product.innerText.toLowerCase().includes(value)) {
+      if(product.innerText.toLowerCase().trim().includes(value)) {
          product.style.display = 'block'
       } else {
          product.style.display = 'none'
+
       }
    })
 }

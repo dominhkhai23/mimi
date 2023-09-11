@@ -8,6 +8,23 @@
   
     .header_index5-navbar-menu {
       display: block;
+      margin-top: 4px;
+    }
+
+    .header_index5-navbar-logo {
+      padding-left: 32px;
+      margin-top: 16px;
+    }
+  
+    .header_index5-navbar-search {
+      padding-right: 12px;
+    }
+  
+    .header_index5-navbar-user {
+      padding-right: 12px;
+    }
+    .header_index5-navbar-form {
+       right: -30px;
     }
   
     /* modal */
@@ -78,6 +95,10 @@
       .footer_index5-icons {
         margin-bottom: 32px;
         margin-top: 14px;
+      }
+
+      .modal_search-suggest {
+        right: 12%;
       }
   
   }
@@ -171,7 +192,11 @@
   
       .modal_search-suggest {
         width: 320px;
-        left: 14%;
+        left: 12%;
+      }
+
+      .modal_search-product {
+        width: 90%;
       }
     
   }

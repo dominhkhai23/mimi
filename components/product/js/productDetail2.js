@@ -195,7 +195,7 @@ var dataImg = [
              'https://product.hstatic.net/200000696635/product/frame_57_ff01cfd9807d47b19ec00aa65b2ce4fb.png',
          ],
          img1: 'https://product.hstatic.net/200000696635/product/frame_56_5e2199fb082041d3ab669075a49c7665.png',
-         name: 'Áo khoác - key',
+         name: 'Áo khoác nam - key',
          price: 799000,
          color:[
             'xám',

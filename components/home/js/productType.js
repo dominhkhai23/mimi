@@ -208,6 +208,7 @@ productType.forEach((product, index) => {
         var dataType = dataProduct.filter((data) => {
             return index === data.id;
         });
+        console.log(dataType)
         window.localStorage.removeItem('productType');
         window.localStorage.setItem('productType', JSON.stringify(dataType));
         window.localStorage.setItem('indexType', JSON.stringify(currentIndex));

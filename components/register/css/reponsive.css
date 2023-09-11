@@ -4,6 +4,7 @@
 
     .header_index0-navbar-logo {
         margin-left: 40px;
+        margin-top: 4px;
     }
     .header_index0-navbar-menu {
         display: block;
@@ -54,7 +55,8 @@
         font-size: 2rem;
     }
     .header_users-information {
-      right: 164px;
+      right: 162px;
+      
     }
     .cart-more {
         margin-right: 2px;
@@ -65,6 +67,8 @@
         margin-right: 2px;
         margin-top: 36px;
     }
+
+    
     /* content */
 
     /* footer */
@@ -78,7 +82,7 @@
     }
     /* modal */
     .modal_search-suggest {
-        left: 14%;
+        left: 12%;
      }
 }
 
@@ -95,7 +99,7 @@
     }
 
     .header_users-information {
-        right: 42px;
+        right: 34px;
     }
      
     /* content */
@@ -193,5 +197,9 @@
     .modal_search-suggest {
         width: 320px;
         left: 14%;
+    }
+
+    .modal_search-product {
+        width: 90%;
     }
 }

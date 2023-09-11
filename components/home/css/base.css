@@ -110,7 +110,7 @@ header {
     margin-left: 12px;
 }
 .header_navbar-user {
-    margin-left: 12px;
+    margin-left: 22px;
     position: relative;
 }
 
@@ -162,7 +162,7 @@ header {
 .header_users {
   margin-top: 6px;
   margin-right: 8px;
-  margin-left: 18px;
+  margin-left: 26px;
   display: none;
 }
 
@@ -180,8 +180,8 @@ header {
   height: 200px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   border-radius: 3px;
-  right: 206px;
-  top: 60px;
+  right: 214px;
+  top: 70px;
   display: none;
 }
 
@@ -249,7 +249,7 @@ header {
 }
 
 .header_navbar-cart {
-    margin-left: 12px;
+    margin-left: 22px;
     position: relative;
 }
 
@@ -271,7 +271,7 @@ header {
 .cart-more::before {
     position: absolute;
     content: "";
-    border-width: 50px;
+    border-width: 20px;
     border-style: solid;
     border-color: transparent;
     right: 26px;

@@ -17,7 +17,6 @@ input.addEventListener('keyup', (event) => {
       case 13: 
         Product(valueInput)
         modalSearch2.classList.remove('open')
-        input.value = ''
         modalSuggest.classList.remove('open4')
         content2.style.display = 'block'
         contentIndex4.classList.add('close3')
@@ -33,7 +32,6 @@ modalSearchBtn.addEventListener('click', () => {
    if(searchValue) {
       Product(searchValue)
       modalSearch2.classList.remove('open')
-      input.value = ''
       modalSuggest.classList.remove('open4')
       content2.style.display = 'block'
       contentIndex4.style.display = 'none'
@@ -102,6 +100,6 @@ input.addEventListener('input', (e) => {
 
 
 headerIndex4Navbar.addEventListener('click', () => {
-   modalSearch.classList.add('open')
+   modalSearch2.classList.add('open')
 })
 

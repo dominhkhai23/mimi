@@ -31,6 +31,7 @@ function validator(options) {
                     }
                     window.localStorage.setItem('users', JSON.stringify(dataUsers));
                     inputElement.value = ''
+                    window.location.href = '../home/index.html'
                 } else {
                     alert('Sai email hoặc mật khẩu');
                 }

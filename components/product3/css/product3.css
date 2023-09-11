@@ -110,8 +110,8 @@ header {
 }
 
 .header_index3-navbar-user {
-    margin-left: 12px;
-      position: relative;
+    margin-left: 22px;
+    position: relative;
 }
   
 .header_index3-navbar-user:hover .header_index3-navbar-form {
@@ -163,8 +163,8 @@ header {
 
 .header_users {
   margin-top: 6px;
-  margin-right: 8px;
-  margin-left: 18px;
+  margin-right: 12px;
+  margin-left: 26px;
   display: none;
 }
 
@@ -183,7 +183,7 @@ header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   border-radius: 3px;
   right: 206px;
-  top: 60px;
+  top: 70px;
   display: none;
 }
 
@@ -275,7 +275,7 @@ header {
 .cart-more::before {
     position: absolute;
     content: "";
-    border-width: 50px;
+    border-width: 20px;
     border-style: solid;
     border-color: transparent;
     right: 26px;
@@ -471,13 +471,13 @@ header {
    line-height: 30px;
 }
 .content2_indexing-item {
-  font-size: 1.6rem;
-  margin-left: 8px;
-  color: #155BF6;
+   font-size: 1.6rem;
+   margin-left: 8px;
+   color: #155BF6;
 }
-
-.content_indexing-item--color {
-  color: #ccc;
+ 
+.content2_indexing-item--color {
+   color: #ccc;
 }
  
 .content2_product {
@@ -487,6 +487,10 @@ header {
 .content2_product-imgs {
    position: relative;
    transition: transform 0.5s linear;
+}
+
+.content2_product-imgs:hover .content2_product-eye {
+  display: block;
 }
 .content2_product-imgs:hover {
    transform: scale(0.9);
@@ -505,19 +509,41 @@ header {
    z-index: -1;
    object-fit: cover;
 }
+
+.content2_product-eye-link {
+  color: var(--black-color);
+}
+
+.content2_product-eye {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--white-color);
+  font-size: 1.6rem;
+  padding: 10px 16px;
+  border-radius: 3px;
+  display: none;
+}
+
+.content2_product-eye:hover {
+  background-color: #c23564;
+  color: var(--white-color);
+}
  
 .content2_product-information {
     margin-top: 12px;
 }
-
 .content2_product-other {
-  font-size: 1.4rem;
-  user-select: none;
+   font-size: 1.4rem;
+   user-select: none;
 }
  
  .content2_product-heart {
    font-size: 1.4rem;
    margin-left: 160px;
+   cursor: pointer;
  }
  
 .content2_product-name {
@@ -531,9 +557,8 @@ header {
 }
 
 .content2_active {
-   margin-top: 22px;
+  margin-top: 22px;
 }
-
 /*  */
 .content_index3-body {
    margin-top: 50px;

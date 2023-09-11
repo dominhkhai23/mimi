@@ -9,17 +9,18 @@ inputs.forEach(function(input, index) {
     input.addEventListener('change', function() {
         if (this.checked) {
             var priceText = productPrices[index].innerText;
-            var price = parseInt(priceText.replace('Giá:', '').replace('đ', '').replace(',', ''));
+            var price = parseInt(priceText.replace('Giá:', '').replace('đ', '')) ;
+            
             var number = parseInt(quantity[index].value);
-            total += price * number;
+            total += (price *= 1000) * number;
         } else {
             var priceText = productPrices[index].innerText;
-            var price = parseInt(priceText.replace('Giá:', '').replace('đ', '').replace(',', ''));
+            var price = parseInt(priceText.replace('Giá:', '').replace('đ', ''));
             var number = parseInt(quantity[index].value)
-            total -= price * number;
+            total -= (price *= 1000) * number;
         }
-
-        totalText.innerText = 'Tổng số tiền: ' + total + 'đ';
+        var formattedAmount = total.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
+        totalText.innerText = 'Tổng số tiền: ' + formattedAmount;
     });
 });
 
@@ -32,7 +33,6 @@ Array.from(btnDelete).forEach((btn, index) => {
     var count = JSON.parse(localStorage.getItem('count'));
     if (index !== -1) {
         data.splice(index, 1);
-        count--;
     }
     localStorage.setItem('count', JSON.stringify(count));
     localStorage.setItem('information', JSON.stringify(data));

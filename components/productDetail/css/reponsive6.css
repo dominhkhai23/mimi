@@ -121,7 +121,7 @@
 
       /* modal */
       .modal_search-suggest {
-         left: 14%;
+         left: 12%;
       }
   
   }
@@ -260,6 +260,10 @@
       .modal_search-suggest {
         width: 320px;
         left: 14%;
+      }
+
+      .modal_search-product {
+        width: 90%;
       }
     
   }

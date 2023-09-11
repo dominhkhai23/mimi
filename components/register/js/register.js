@@ -3,6 +3,7 @@ function validator(options) {
     if(formElement) {
          formElement.onsubmit = function(e) {
              e.preventDefault(); 
+             var isSuccessAlerted = false;
              var dataRegister = {}
              options.rules.forEach( rule => {
                  var inputElement = document.querySelector(rule.selector)
@@ -14,8 +15,12 @@ function validator(options) {
                 } else {
                      errorElement.innerText = ''
                      dataRegister[inputElement.id] = valueInput;
+                     if(!isSuccessAlerted) {
+                        alert('Bạn đã đăng ký thành công');
+                        isSuccessAlerted = true;
+                     }
+                     window.location.href = '../login/login.html'
                 } 
-
                 
                window.localStorage.setItem('informationRegister', JSON.stringify(dataRegister))
 
