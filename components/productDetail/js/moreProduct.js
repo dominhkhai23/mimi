@@ -14,10 +14,11 @@ if (cartBody.children.length === 0) {
 }
 
 btnMore.addEventListener('click', () => {
-  var number = count++;
-  if(number > 0) {
+   count++;
+  ;
+  if( count > 0) {
     cartItemCount.style.display = 'block';
-    cartItemCount.innerText = number
+    cartItemCount.innerText = count
   }
   var price = document.querySelector('.content_index6-price').innerText
   var img = document.querySelector('.content_index6-main-photo-img2').src
@@ -41,7 +42,7 @@ btnMore.addEventListener('click', () => {
   } else {
     existingInformation.push(product);
   }
-  window.localStorage.setItem('count', JSON.stringify(number));
+  window.localStorage.setItem('count', JSON.stringify(count));
   window.localStorage.setItem('information', JSON.stringify(existingInformation))
   cart(existingInformation)
 })
@@ -55,7 +56,8 @@ function cart(existingInformation) {
         var cartMore = document.querySelector('.cart-more-text').closest('.cart-not-product')
         cartMore.remove()
     } 
-
+     
+    cartBody.innerHTML = ''
     existingInformation.forEach(data => {
        
       var cartItem = document.createElement('div');

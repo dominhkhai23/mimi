@@ -1,7 +1,7 @@
 var modal4 = document.querySelector('.modal4')
 var modal4Delete = document.querySelector('.modal4_body-delete')
 var overlay4 = document.querySelector('.modal4_overlay')
-var information = document.querySelector('.modal4_body-detail')
+var informationClothes = document.querySelector('.modal4_body-detail')
 const inputQuantity = document.querySelectorAll('.input')
 var Buy = document.querySelector('.content_product-buy')
 var inputElement = document.querySelector('.address-input')
@@ -44,9 +44,6 @@ inputQuantity.forEach((btn, index) => {
 })
 
 
-
-
-
 function Render(img, name, quantity, total) {
     const modalItem = document.createElement('div')
     modalItem.classList.add('modal4_body-detail-information')
@@ -70,7 +67,7 @@ function Render(img, name, quantity, total) {
     modalTotals.innerText = total
     modalItem.appendChild(imgs)
     modalItem.appendChild(description)
-    information.appendChild(modalItem)
+    informationClothes.appendChild(modalItem)
 };
 
 function check() {

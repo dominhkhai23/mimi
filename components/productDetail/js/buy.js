@@ -2,7 +2,7 @@ var btnBuy = document.querySelector('.content_index6-buy')
 var modal4 = document.querySelector('.modal4')
 var modal4Delete = document.querySelector('.modal4_body-delete')
 var overlay4 = document.querySelector('.modal4_overlay')
-var information = document.querySelector('.modal4_body-detail')
+var informationClothes = document.querySelector('.modal4_body-detail')
 var address = document.querySelector('#address')
 var btnPut = document.querySelector('.modal4_body-btn')
 var cartItems = [];
@@ -13,17 +13,20 @@ btnBuy.addEventListener('click', () => {
     var quantity = document.querySelector('.content_index6-input').value;
     var priceText = document.querySelector('.content_index6-price').innerText;
     var price = parseInt(priceText.replace('Giá:', '').replace('đ', ''));
-    var total = price * quantity;
-    var existingItem = cartItems.find(function(item) {
+    var total = ((price * quantity) * 1000).toLocaleString("vi-VN", { style: "currency", currency: "VND" });
+    var existingItem = cartItems.findIndex(function(item) {
         return item.name === name
     })
 
-    if(existingItem) {
-        existingItem.quantity = parseFloat(existingItem.quantity) + 1
-        existingItem.total += total
+    console.log(existingItem)
+    
+    
+    if(existingItem !== -1) {
+        cartItems[existingItem].quantity += 1
+        cartItems[existingItem].total += total
     } else {
         cartItems.push({
-            img: img,
+            img: img, 
             name: name,
             quantity: parseInt(quantity),
             total: total
@@ -31,6 +34,7 @@ btnBuy.addEventListener('click', () => {
     }
 
     Render()
+    
 })
 
 window.localStorage.setItem('informationBay', JSON.stringify(cartItems))
@@ -45,7 +49,7 @@ overlay4.addEventListener('click', () => {
 
 function Render() {
      // Xóa nội dung hiện tại của giỏ hàng
-     information.innerHTML = '';
+     informationClothes.innerHTML = '';
 
      // Duyệt qua từng sản phẩm trong giỏ hàng và hiển thị lên giao diện
      cartItems.forEach(item => {
@@ -69,13 +73,14 @@ function Render() {
  
          modalItem.appendChild(imgs);
          modalItem.appendChild(description);
-         information.appendChild(modalItem);
+         informationClothes.appendChild(modalItem);
 
 
          var modalTotals = document.querySelector('.modal4_body-total')
-         modalTotals.innerText = 'Tổng số tiền: ' + item.total + 'đ'
+         modalTotals.innerText = 'Tổng số tiền: ' + item.total 
      });
 }
+
 
 function check() {
     address.addEventListener('blur', (e) => {
